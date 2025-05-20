@@ -3,3 +3,7 @@ class Person:
         self.lastname = lastname
         self.firstname = firstname
         self.birthdate = birthdate
+        
+    def __str__(self):
+        # return self.firstname + ' ' + self.lastname
+        return f'{self.firstname};{self.lastname};{self.birthdate}'
