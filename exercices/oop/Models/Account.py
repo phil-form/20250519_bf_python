@@ -1,4 +1,6 @@
-class Account:
+from abc import ABC, abstractmethod
+
+class Account(ABC):
     def __init__(self, number, amount, owner):
         self.number = number
         self.amount = amount
@@ -13,3 +15,7 @@ class Account:
             self.amount -= amount
         else:
             print("error !! solde insuffisant !")
+            
+    @abstractmethod
+    def applyInterest(self):
+        pass

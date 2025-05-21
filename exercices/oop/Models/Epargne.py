@@ -9,3 +9,6 @@ class Epargne(Account):
     def retrait(self, amount):
         super().retrait(amount)
         self.last_date = datetime()
+        
+    def applyInterest(self):
+        self.amount += self.amount * 0.09

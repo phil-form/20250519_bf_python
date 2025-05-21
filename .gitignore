@@ -122,3 +122,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.DS_Store
+
+Example/oop/06_Jupyter/tnf_pythonadv-master/
+
+Example/oop/07_venv/bin/
