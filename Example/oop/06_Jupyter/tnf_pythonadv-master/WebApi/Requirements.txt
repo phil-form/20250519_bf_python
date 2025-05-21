@@ -1,0 +1,7 @@
+Django
+asgiref
+django-filter
+djangorestframework
+djangorestframework-simplejwt
+pytz
+sqlparse

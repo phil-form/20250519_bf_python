@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>941</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>964</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menutest">
+    <property name="title">
+     <string>test</string>
+    </property>
+    <addaction name="actionqweqweqe"/>
+   </widget>
+   <widget class="QMenu" name="menuasda">
+    <property name="title">
+     <string>asda</string>
+    </property>
+    <addaction name="actionasdasda"/>
+    <addaction name="actionasdasda_2"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionasd"/>
+   </widget>
+   <widget class="QMenu" name="menuqweqwe">
+    <property name="title">
+     <string>qweqwe</string>
+    </property>
+    <addaction name="actionasdasd"/>
+    <addaction name="actionadsasd"/>
+   </widget>
+   <addaction name="menutest"/>
+   <addaction name="menuasda"/>
+   <addaction name="menuqweqwe"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionTest">
+   <property name="text">
+    <string>Test</string>
+   </property>
+  </action>
+  <action name="actionasdasd">
+   <property name="text">
+    <string>asdasd</string>
+   </property>
+  </action>
+  <action name="actionadsasd">
+   <property name="text">
+    <string>adsasd</string>
+   </property>
+  </action>
+  <action name="actionasdasda">
+   <property name="text">
+    <string>asdasda</string>
+   </property>
+  </action>
+  <action name="actionasdasda_2">
+   <property name="text">
+    <string>asdasda</string>
+   </property>
+  </action>
+  <action name="actionasd">
+   <property name="text">
+    <string>asd</string>
+   </property>
+  </action>
+  <action name="actionqweqweqe">
+   <property name="text">
+    <string>qweqweqe</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

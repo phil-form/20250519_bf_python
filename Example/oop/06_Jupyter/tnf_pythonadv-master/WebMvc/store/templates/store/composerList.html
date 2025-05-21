@@ -1,0 +1,46 @@
+{% if composers|length_is:'0' %}
+    <div>
+        <p>Il n'y a aucun compositeurs en db!</p>
+    </div>
+{% else %}
+    <table class="table">
+        <thead class='thead-dark'>
+            <tr>
+                <th>#</th>
+                <th>Lastname</th>
+                <th>Firstname</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for composer in composers %}
+            {% comment %} print(composer) {% endcomment %}
+                <tr>
+                    <td>{{composer.pk}}</td>
+                    <td>{{composer.lastname}}</td>
+                    <td>{{composer.firstname}}</td>
+                    <td>
+                        <a class="btn  btn-primary" href='{% url 'store:details' id=composer.pk %}'>
+                            Details
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <nav>
+        <ul class='pagination'>
+            
+                <li class="page-item">
+                    <a class="page-link" href='{% if composers.has_previous %} ?page={{ composers.previous_page_number }} {% else %} # {% endif %}' disabled='{% if composers.has_previous %} false {% else %} true {% endif %}'>Previous</a>
+                </li>
+            
+            {% for i in pages %}
+                <li class="page-item"><a class="page-link" href='?page={{ i }}'>{{ i }}</a></li>
+            {% endfor %}
+            {% if composers.has_next %}
+                <li class="page-item"><a class="page-link" href='?page={{ composers.next_page_number }}'>Next</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+{% endif %}

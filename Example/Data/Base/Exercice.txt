@@ -1,0 +1,9 @@
+1) Initialiser un tableau avec les valeurs suivantes : 
+5, 9, 4, 3, 7, 2, 3, 1 
+Imprimer ensuite celui-ci dans le terminal.
+
+2) Créer un dictionnaire contenant deux tableau, pour contenir les chiffres paire et impaire
+de l'exercice précédent. (n'oubliez pas l'operateur modulo).
+
+https://gitlab.com/philippe.stons/tnf_pythonbase
+sklearn

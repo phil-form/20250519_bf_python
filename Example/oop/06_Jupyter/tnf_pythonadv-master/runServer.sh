@@ -1,0 +1,1 @@
+python ./WebApi/manage.py runserver

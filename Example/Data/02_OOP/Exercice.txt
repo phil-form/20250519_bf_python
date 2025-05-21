@@ -1,0 +1,11 @@
+Créer une class chat avec les attributs et methodes suivates :
+    - son nom, 
+    - son poids,
+    - sa taille,
+    - son sexe,
+    - son âge,
+    - caractère (énergique, farouche, câlin, etc.)
+    - griffes ont été coupées
+    - poil long ou non
+Methodes :
+    - crier().
